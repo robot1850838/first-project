@@ -1,3 +1,4 @@
+console.log("111")
 require.config({
 	baseUrl: "/",
 	paths : {
@@ -10,10 +11,10 @@ require.config({
 	},
 	shim :{
 		"fly":{
-			deps:[jquery]
+			deps:["jquery"]
 		},
 		"zoom":{
-			deps :[jquery]
+			deps :["jquery"]
 		}
 	}
 });
