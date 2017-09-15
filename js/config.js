@@ -1,4 +1,4 @@
-console.log("111")
+
 require.config({
 	baseUrl: "/",
 	paths : {
@@ -6,8 +6,8 @@ require.config({
 		"cookie" : "lib/jquery_plugins/jquery.cookie",
 		"fly" : "lib/jquery_plugins/jquery.fly.min",
 		"zoom":"lib/jquery_plugins/jquery.elevateZoom-2",
-		"template" : "lib/arttemplate/template-native"
-//		"load":"js/loadheaderfooter"
+		"template" : "lib/arttemplate/template-native",
+		"load":"js/loadheaderfooter"
 	},
 	shim :{
 		"fly":{

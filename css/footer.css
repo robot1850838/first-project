@@ -1,0 +1,144 @@
+
+.footer{
+	width: 100%;
+	height: auto;
+	font-size: 12px;
+}
+.sbottom_icon {
+    width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #e1cbb7;
+    border-bottom: 1px solid #e1cbb7;
+}
+.sbottom_icon ul {
+    height: 60px;
+    margin: 20px 0;
+    width: 1200px;
+}
+.sbottom_icon ul li {
+    float: left;
+    border-right: 1px solid #e1cbb7;
+    padding: 0 35px;
+    line-height: 60px;
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sbottom_icon ul li img {
+    vertical-align: middle;
+}
+.sbottom_icon ul .sbottom_icon01 {
+    padding-left: 0px;
+}
+.sbottom_icon ul .sbottom_icon05 {
+    border-right: 1px solid #fff;
+}
+.sbottom_related {
+    width: 1200px;
+    height: 190px;
+    border-bottom: 1px dashed #d7d7d7;
+    margin: 40px auto 0;
+}
+.sbottom_related01 {
+    width: 170px;
+    height: 125px;
+    margin-left: 40px;
+    float: left;
+}
+.sbottom_related01 p {
+    margin-top: 25px;
+    color: #646464;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.sbottom_related01 p span {
+    font-size: 11px;
+    color: #969696;
+    font-weight: normal;
+}
+.sbottom_related02 {
+    float: left;
+    width: 690px;
+    height: auto;
+}
+.sbottom_related02 ul {
+    margin: 0 55px 0 45px;
+    float: left;
+}
+.sbottom_related02 ul li{
+	margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #000;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.sbottom_related02 ul li a.sbottom_link {
+    color: #5e5e60;
+    font-size: 13px;
+    font-weight: bold;
+}
+.sbottom_related02 ul li a {
+    color: #888;
+    line-height: 25px;
+}
+.sbottom_related03 {
+    float: left;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #000;
+}
+.sbottom_code, .sbottom_app {
+    width: 110px;
+    float: left;
+    margin-right: 44px;
+    color: #555;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.sbottom_app {
+    margin-right: 0;
+}
+.sbottom_copy {
+    width: 100%;
+    margin-top: 15px;
+    height: 100px;
+    text-align: center;
+}
+.sbottom_copy div._link {
+    height: 16px;
+    width: 705px;
+    margin: 0 auto;
+    color: #666;
+}
+.sbottom_copy div a {
+    color: #666;
+    font-size: 13px;
+    padding: 0 8px;
+}
+.sbottom_copy p {
+    margin: 15px auto 20px;
+    color: #999;
+    text-align: center;
+}
+.sbottom_copy ul {
+    height: 16px;
+    width: 705px;
+    margin: 0 auto;
+    color: #666;
+}
+.sbottom_copy ul a {
+    color: #666;
+    font-size: 13px;
+    padding: 0 8px;
+}
+.sbottom_copy p span {
+    color: #666;
+}
+i {
+    font-style: normal;
+}

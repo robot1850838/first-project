@@ -1,5 +1,4 @@
-define(["jquery"],function($){
-   console.log("11"); 
+define(["jquery"],function($){ 
      $.ajax({
      	url :"/html/include/header.html",
      	type :"get",
@@ -8,4 +7,5 @@ define(["jquery"],function($){
      		 $(".header").html(data);
      	}
      });
+    $(".footer").load("/html/include/footer.html");
 });
