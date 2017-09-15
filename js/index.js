@@ -7,20 +7,51 @@ require(["config"],function(){
 			  $(".fbL02_ul").html(html);
 			  console.log($(".fbL02_ul")[0]);
 		});
-         //点击加入购物车上移
-         // $(".temple").on("mouseenter",".fbL02_li",function(){
-         // 	animate(function(){
-         // 	   $(".temple .fbL02_li a").css({"margin-top":"10px"});
-         //       $(".temple .fbL02_li i").css({"height":"15px","line-height":"15px"});
-         //       $(".temple .fbL02_li .btn_car_quick").css({"bottom":"20px"});
-         //   },1000);
-               
-         // });
-
-
-
-
-         //banner轮播
+         //fbL上下轮播
+            var fbL_timer = null,
+             fbL_currentIndex = 0,
+             fbL_nextIndex = 1,
+             boxHeight = $(".fbL02_box").outerHeight();
+             fbL_timer = setInterval(fbL_move,3000);
+             //绑定移入事件
+             $(".fbL02_index li").stop().on("mouseenter",function(){
+             	    var index = $(this).index();
+             	    if(fbL_currentIndex === index)
+             	    	return;
+                       fbL_nextIndex = index; 
+                       fbL_move();     
+             	    
+             });
+          // 鼠标移入/移出容器，停止/启动自动轮播计时器
+			$(".fbL02_box").stop().hover(function(){
+				// mouseenter
+				clearInterval(fbL_timer);
+			}, function(){
+				// mouseleave
+				timer = setInterval(fbL_move, 3000);
+			}); 
+             function fbL_move(){
+		           var _top = -1 * fbL_nextIndex * boxHeight/2;           	             	   
+						   // 添加/删除样式
+				   var circleIndex = fbL_nextIndex ;
+				
+				
+			  $(".fbL02_index li").eq(circleIndex).addClass("current")
+									   .siblings().removeClass("current");
+						console.log("11");
+			  $(".fbL02_box").stop().animate({top:_top},function(){
+		                      console.log(fbL_nextIndex);
+		                      if(fbL_nextIndex >= 2){
+		                         fbL_currentIndex = -1;
+		             	   	     fbL_nextIndex = 0;
+		             	   	     
+		             	   }
+		             	   }); 
+						   fbL_currentIndex = fbL_nextIndex;
+						   fbL_nextIndex++;
+						   console.log("13");
+             }
+         //banner左右轮播
         		var imgBoxes = $("#imgs li"), // 待轮播的图片盒子
 				len = imgBoxes.length, // 轮播图片的张数
 				imgWidth = imgBoxes.outerWidth(), // 轮播图片盒子的宽度

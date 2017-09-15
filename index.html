@@ -9,7 +9,7 @@
     <script src="lib/requirejs/require.js" data-main="js/index"></script>
 </head>
 <body>
-	<div class="header" style="width: 100%;height: auto;"></div class="header">
+	<div class="header" style="width: 100%;height: auto;"></div>
 	 <div class="my_nav clear">
     	<div class="my_nav1200">
     		<div class="my_nav01">
@@ -165,7 +165,8 @@
       				   <div class="fl01_divR"></div>
       				   <div class="clear"></div>	  
       				</div>
-      			</div></div>
+      			</div>
+      		</div>
       	    <div class="fbL02">
       	    	<div class="fbL_hd">
       	    		<ul class="fbL02_index" style="height: 90px;">
@@ -182,10 +183,10 @@
 			    	    <a href="#" title="<%= product.description %>" target="_blank">
 			    	     <img src="<%= product.bigimg%>" alt="<%= product.description %>">
 			    	    	<p><%= product.description %></p>
-			    	    <font></font>
+			    	    <font><%= product.font %></font>
 			    	    	<i><%= product.moneynew %><span><%= product.moneyold %></span></i>
 			    	    </a>
-			          <div class="fbL02_car btn_car_quick docs"
+			          <div class="fbL02_car btn_car_quick docs">
 			         <img src="<%= product.carimg %>">加入购物车</div>
 			    	    	</div>
 			     	  </div>
@@ -198,13 +199,37 @@
 		       </div>
       	    	</div>
       	    </div>
-    	</div>
     </div>
-</div>
-</div>
-      	<div class="fir-br"></div>
-      	<div class="clear"></div>	     		      	
-      </div>	
+        <div class="fir_bR">
+    		<div class="fbR01">
+    			<p>企业新闻<a href="/news/features/" target="_blank" title="更多">更多></a></p>
+    			<ul>
+                  
+      <li><a href="/news/features/cyys/2555.html" title="创研·搜农坊2017城步助学行" target="_blank">创研·搜农坊2017城步助...</a></li>
+     
+      <li><a href="/news/features/cyys/2554.html" title=""湘品出湘龙山起，精品百合龙山来",2017龙山百合文化旅游节即将拉开大幕！" target="_blank">"湘品出湘龙山起，精品百合...</a></li>
+     
+      <li><a href="/news/features/cyys/2552.html" title="2017农产品创意-被玩疯了的黄桃！" target="_blank">2017农产品创意-被玩疯...</a></li>
+     
+      <li><a href="/news/features/cyys/2551.html" title="0利润！！8.5元/斤搜农坊炎陵黄桃，拔光底价，送消暑福利" target="_blank">0利润！！8.5元/斤搜农...</a></li>
+     
+      <li><a href="/news/features/cyys/2550.html" title="北纬26°炎陵高山黄桃，记忆一生好味道！" target="_blank">北纬26°炎陵高山黄桃，记...</a></li>
+     
+      <li><a href="/news/features/cyys/2549.html" title="【速度与激情】搜农坊保证炎陵黄桃品质的心比40度的盛夏更炙热！" target="_blank">【速度与激情】搜农坊保证炎...</a></li>
+     
+      <li><a href="/news/features/cyys/2548.html" title="炎陵黄桃丰收增产 电商扶贫保驾护航" target="_blank">炎陵黄桃丰收增产 电商扶贫...</a></li>
+     
+      <li><a href="/news/features/cyys/2547.html" title="【炎陵黄桃加速度】搜农坊炎陵黄桃发货再创新高！" target="_blank">【炎陵黄桃加速度】搜农坊炎...</a></li>
+     
+    			</ul>
+    		</div>
+    		<div class="fbR02">
+    			<a href="/products/ProductList.aspx?jplh=礼盒" target="_blank"><img src="img/fbL02/slide01.jpg"></a>
+    			<a href="/news/experience/" target="_blank"><img src="img/fbL02/slide02.jpg"></a>
+    		</div>
+    	</div>
+        <div class="clear"></div>
+      </div>
 	<div class="footer"></div>
 </body>
 </html>
