@@ -5,9 +5,17 @@ require(["config"],function(){
          	console.log(data);
 			var html = template("fbL02_li_temp",{products:data})
 			  $(".fbL02_ul").html(html);
-			  console.log($(".fbL02_ul"));
+			  console.log($(".fbL02_ul")[0]);
 		});
-
+         //点击加入购物车上移
+         // $(".temple").on("mouseenter",".fbL02_li",function(){
+         // 	animate(function(){
+         // 	   $(".temple .fbL02_li a").css({"margin-top":"10px"});
+         //       $(".temple .fbL02_li i").css({"height":"15px","line-height":"15px"});
+         //       $(".temple .fbL02_li .btn_car_quick").css({"bottom":"20px"});
+         //   },1000);
+               
+         // });
 
 
 

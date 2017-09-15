@@ -179,14 +179,14 @@
 	                	%>
 	               <div class="fbL02_li" style="border: 1px solid rgb(255, 255, 255);">
 			    	    <div class="fbL02_licont" style="border: 4px solid rgb(255, 255, 255);">
-			    	    <a href="#" title="<% product.description %>" target="_blank">
-			    	     <img src="<% product.bigimg%>" alt="<% product.description %>">
-			    	    	<p><% product.description %></p>
+			    	    <a href="#" title="<%= product.description %>" target="_blank">
+			    	     <img src="<%= product.bigimg%>" alt="<%= product.description %>">
+			    	    	<p><%= product.description %></p>
 			    	    <font></font>
-			    	    	<i><%product.moneynew %><span><%product.moneyold %></span></i>
+			    	    	<i><%= product.moneynew %><span><%= product.moneyold %></span></i>
 			    	    </a>
 			          <div class="fbL02_car btn_car_quick docs"
-			         <img src="<%product.carimg %>">加入购物车</div>
+			         <img src="<%= product.carimg %>">加入购物车</div>
 			    	    	</div>
 			     	  </div>
 			   		 <% } %>
