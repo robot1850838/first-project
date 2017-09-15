@@ -1,7 +1,7 @@
 define(["jquery"],function($){
    console.log("11"); 
      $.ajax({
-     	url :"/include/header.html",
+     	url :"/html/include/header.html",
      	type :"get",
      	success :function(data){
      		console.log("11");
