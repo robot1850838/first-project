@@ -1,4 +1,5 @@
-define(["jquery"],function(){
+define(["jquery"],function($){
+   console.log("11"); 
      $.ajax({
      	url :"/include/header.html",
      	type :"get",
