@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/templates.css">
     <script src="lib/requirejs/require.js" data-main="js/index"></script>
 </head>
 <body>
@@ -84,7 +85,7 @@
     		</ul>	
     	</div>
     </div>
-
+   <!-- 轮播图 -->
   <div class="banner"> 
   <div id="container">
 		<ul id="imgs">
@@ -97,6 +98,7 @@
 		<div id="pages"></div>
 	</div> 
 </div>
+    <!-- 限量秒杀 -->
       <div class="fir-box contect">
       	<div class="fir-bl">
       		<div class="fl01">
@@ -173,6 +175,7 @@
     	    		<li>进店必败</li>
     	    		<li>新品发布</li>
     	    	</ul>
+    	   <!-- 限量秒杀template(模板) -->
     <script type="text/html" id="fbL02_li_temp">
 	               <%
 	                	for(var i=0;i<products.length;i++){
@@ -192,6 +195,7 @@
 			     	  </div>
 			   		 <% } %>
     </script>
+        <!-- 模板加入的主体 -->
 		       <div class="temple" style="overflow:hidden; position:relative; height:265px;background-color: white;">
 		       	  <div class="fbL02_box" style="position: relative;">
 		       	  	<div class="fbL02_ul"></div>
@@ -200,6 +204,7 @@
       	    	</div>
       	    </div>
     </div>
+      <!-- 右边企业文章 -->
         <div class="fir_bR">
     		<div class="fbR01">
     			<p>企业新闻<a href="/news/features/" target="_blank" title="更多">更多></a></p>
@@ -230,6 +235,241 @@
     	</div>
         <div class="clear"></div>
       </div>
+    <!-- 土货 -->
+       <div class="my_sonbl my_fir">
+       	  <!-- 上面的土货横幅 -->
+	    <div class="my_sontit my_sontit04">
+	    	<h2>土货</h2>
+	    	<a href="/products/ProductList.aspx?typid=281" target="_blank" title="更多" class="my_sonmore">更多></a>
+	    	<ul>
+	    <li><a href="/products/ProductList.aspx?typid=281&jplh=特惠专区" target="_blank">特惠爆款</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    		  
+      <li><a href="/products/ProductList.aspx?typid=283" title="源产肉禽">源产肉禽</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+      <li><a href="/products/ProductList.aspx?typid=282" title="农家食材">农家食材</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+      <li><a href="/products/ProductList.aspx?typid=284" title="源创零食">源创零食</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+	    	</ul>
+	    	<div class="clear"></div>
+	    </div>
+	      <!-- 土货图片样式列表 -->
+	      <div class="fir_list">
+	      <!-- 左边 -->
+<div class="fir_lL">	    	         
+ 	<img alt="散养土鸡蛋" src="img/localproduct/left.jpg" onClick="window.location.href = 'http://www.so50.com/products/ProductDec/4551.html'" width="291" height="526"/>                                                     
+	    		<ul class="fir_co04">
+	    			<div class="class_ser">
+            	<ul>
+                <li><a href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E4%B9%9D%E7%96%91%E5%B1%B1">九疑山</a></li>
+                <li><a href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E8%85%8A%E5%85%AB%E8%B1%86">腊八豆</a></li>
+                <li><a href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E9%85%B1%E8%BE%A3%E6%A4%92">酱辣椒</a></li>
+                <li><a href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E9%98%BF%E5%A9%86%E5%B0%8F%E8%8F%9C">阿婆小菜</a></li>
+                <li><a href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E6%AF%9B%E9%98%BF%E5%A9%86">毛阿婆</a></li>
+                <li><a href="http://www.so50.com/products/ProductList.aspx?typid=193">特色食品</a></li>
+                </ul>
+            </div>
+	    		</ul>
+	    	</div>
+	    	<!-- 右边 -->
+	  <!-- 土货右边的template(模板) -->
+	    <script type="text/html" id="fir_lR_temp">
+	    <%
+          for(var i=0;i<products.length;i++){
+               var product = products[i];
+         %>
+	    	<div class="fir_lRbox">
+	    	<a  href="/products/ProductDec/7573.html" title="<%= product.description%>" target="_blank">
+	    				<img src="<%= product.bigimg%>" alt="<%= product.description%>">
+	    				<p><font><%= product.description%></font>
+	    				   <i><%= product.moneynew%>&nbsp;<span><%= product.moneyold%></span></i>
+	    				</p>
+	    			</a>
+	  <i class="fir_lsadd docs"><img src="<%= product.carimg%>">加入购物车</i>
+	      </div>
+          <% } %>
+	    </script>
+	    <!-- 添加的主体 -->
+	    	  <div class="fir_lR">
+	    	  	
+	    	  </div>
+	   <div class="clear"></div>
+       </div>
+
+
+
+           <!-- 水果 -->
+       <div class="my_sonbl my_fir">
+       	  <!-- 上面的水果横幅 -->
+	    <div class="my_sontit my_sontit04" style="background: #fbf4e8;
+    border-bottom: 1px solid #f69a08;">
+	    	<h2 style="color: #f69a08;">水果</h2>
+	    	<a href="/products/ProductList.aspx?typid=281" target="_blank" title="更多" class="my_sonmore" style="color: #f69a08;">更多></a>
+	    	<ul>
+	    <li><a href="/products/ProductList.aspx?typid=281&jplh=特惠专区" target="_blank">特惠爆款</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    		  
+      <li><a href="/products/ProductList.aspx?typid=283" title="源产肉禽">源产肉禽</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+      <li><a href="/products/ProductList.aspx?typid=282" title="农家食材">农家食材</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+      <li><a href="/products/ProductList.aspx?typid=284" title="源创零食">源创零食</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+	    	</ul>
+	    	<div class="clear"></div>
+	    </div>
+	      <!-- 水果图片样式列表 -->
+	      <div class="fir_list">
+	      <!-- 左边 -->
+<div class="fir_lL">	    	         
+ 	<img alt="散养土鸡蛋" src="img/fruits/left.jpg" onClick="window.location.href = 'http://www.so50.com/products/ProductDec/4551.html'" width="291" height="526"/>                                                     
+	    		<ul class="fir_co04">
+	    			<div class="class_ser">
+            	<ul>
+                <li style="border: 1px solid #f69a08"><a style="color: #f69a08;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E4%B9%9D%E7%96%91%E5%B1%B1">进口水果</a></li>
+                <li style="border: 1px solid #f69a08"><a style="color: #f69a08;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E8%85%8A%E5%85%AB%E8%B1%86">国产水果</a></li>
+                <li style="border: 1px solid #f69a08"><a style="color: #f69a08;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E9%85%B1%E8%BE%A3%E6%A4%92">冬枣</a></li>
+                <li style="border: 1px solid #f69a08"><a style="color: #f69a08;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E9%98%BF%E5%A9%86%E5%B0%8F%E8%8F%9C">奇异果</a></li>
+                <li style="border: 1px solid #f69a08"><a style="color: #f69a08;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E6%AF%9B%E9%98%BF%E5%A9%86">牛油果</a></li>
+                <li style="border: 1px solid #f69a08"><a style="color: #f69a08;" href="http://www.so50.com/products/ProductList.aspx?typid=193">血丝李</a></li>
+                </ul>
+            </div>
+	    		</ul>
+	    	</div>
+	    	<!-- 右边 -->
+	  <!-- 水果右边的template(模板) -->
+	    <script type="text/html" id="fir_lR_temp">
+	    <%
+          for(var i=0;i<products.length;i++){
+               var product = products[i];
+         %>
+	    	<div class="fir_lRbox">
+	    	<a  href="/products/ProductDec/7573.html" title="<%= product.description%>" target="_blank">
+	    				<img src="<%= product.bigimg%>" alt="<%= product.description%>">
+	    				<p><font><%= product.description%></font>
+	    				   <i><%= product.moneynew%>&nbsp;<span><%= product.moneyold%></span></i>
+	    				</p>
+	    			</a>
+	  <i class="fir_lsadd docs"><img src="<%= product.carimg%>">加入购物车</i>
+	      </div>
+          <% } %>
+	    </script>
+	    <!-- 添加的主体 -->
+	    	  <div class="fir_lR">
+	    	  	
+	    	  </div>
+	   <div class="clear"></div>
+       </div>
+
+      
+         <!-- 零食 -->
+       <div class="my_sonbl my_fir">
+       	  <!-- 上面的零食横幅 -->
+	    <div class="my_sontit my_sontit04" style="background: #eaf7fb;
+    border-bottom: 1px solid #0b9dcd;">
+	    	<h2 style="color: #0b9dcd;">零食</h2>
+	    	<a href="/products/ProductList.aspx?typid=281" target="_blank" title="更多" class="my_sonmore" style="color: #0b9dcd;">更多></a>
+	    	<ul>
+	    <li><a href="/products/ProductList.aspx?typid=281&jplh=特惠专区" target="_blank">特惠爆款</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    		  
+      <li><a href="/products/ProductList.aspx?typid=283" title="源产肉禽">源产肉禽</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+      <li><a href="/products/ProductList.aspx?typid=282" title="农家食材">农家食材</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+      <li><a href="/products/ProductList.aspx?typid=284" title="源创零食">源创零食</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+	    	</ul>
+	    	<div class="clear"></div>
+	    </div>
+	      <!-- 零食图片样式列表 -->
+	      <div class="fir_list">
+	      <!-- 左边 -->
+<div class="fir_lL">	    	         
+ 	<img alt="散养土鸡蛋" src="img/snacks/left.jpg" onClick="window.location.href = 'http://www.so50.com/products/ProductDec/4551.html'" width="291" height="526"/>                                                     
+	    		<ul class="fir_co04">
+	    			<div class="class_ser">
+            	<ul>
+                <li style="border: 1px solid #0b9dcd;"><a style="color: #0b9dcd;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E4%B9%9D%E7%96%91%E5%B1%B1">蜂蜜</a></li>
+                <li style="border: 1px solid #0b9dcd;"><a style="color: #0b9dcd;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E8%85%8A%E5%85%AB%E8%B1%86">葡萄干</a></li>
+                <li style="border: 1px solid #0b9dcd;"><a style="color: #0b9dcd;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E9%85%B1%E8%BE%A3%E6%A4%92">巧克力</a></li>
+                <li style="border: 1px solid #0b9dcd;"><a style="color: #0b9dcd;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E9%98%BF%E5%A9%86%E5%B0%8F%E8%8F%9C">蓝莓酒</a></li>
+                <li style="border: 1px solid #0b9dcd;"><a style="color: #0b9dcd;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E6%AF%9B%E9%98%BF%E5%A9%86">香酥饼干</a></li>
+                <li style="border: 1px solid #0b9dcd;"><a style="color: #0b9dcd;" href="http://www.so50.com/products/ProductList.aspx?typid=193">布丁</a></li>
+                </ul>
+            </div>
+	    		</ul>
+	    	</div>
+	    	<!-- 右边 -->
+	  <!-- 零食右边的template(模板) -->
+	    <script type="text/html" id="fir_lR_temp">
+	    <%
+          for(var i=0;i<products.length;i++){
+               var product = products[i];
+         %>
+	    	<div class="fir_lRbox">
+	    	<a  href="/products/ProductDec/7573.html" title="<%= product.description%>" target="_blank">
+	    				<img src="<%= product.bigimg%>" alt="<%= product.description%>">
+	    				<p><font><%= product.description%></font>
+	    				   <i><%= product.moneynew%>&nbsp;<span><%= product.moneyold%></span></i>
+	    				</p>
+	    			</a>
+	  <i class="fir_lsadd docs"><img src="<%= product.carimg%>">加入购物车</i>
+	      </div>
+          <% } %>
+	    </script>
+	    <!-- 添加的主体 -->
+	    	  <div class="fir_lR">
+	    	  	
+	    	  </div>
+	   <div class="clear"></div>
+       </div>
+
+
+           <!-- 礼盒 -->
+       <div class="my_sonbl my_fir">
+       	  <!-- 上面的礼盒横幅 -->
+	    <div class="my_sontit my_sontit04" style="background: #fbf0ea;
+    border-bottom: 1px solid #e70908;">
+	    	<h2 style="color: #e70908;">礼盒</h2>
+	    	<a href="/products/ProductList.aspx?typid=281" target="_blank" title="更多" class="my_sonmore" style="color: #e70908;">更多></a>
+	    	<ul>
+	    <li><a href="/products/ProductList.aspx?typid=281&jplh=特惠专区" target="_blank">特惠爆款</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    		  
+      <li><a href="/products/ProductList.aspx?typid=283" title="源产肉禽">源产肉禽</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+      <li><a href="/products/ProductList.aspx?typid=282" title="农家食材">农家食材</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+      <li><a href="/products/ProductList.aspx?typid=284" title="源创零食">源创零食</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>	    	     
+	    	</ul>
+	    	<div class="clear"></div>
+	    </div>
+	      <!-- 礼盒图片样式列表 -->
+	      <div class="fir_list">
+	      <!-- 左边 -->
+<div class="fir_lL">	    	         
+ 	<img alt="散养土鸡蛋" src="img/giftbox/left.jpg" onClick="window.location.href = 'http://www.so50.com/products/ProductDec/4551.html'" width="291" height="526"/>                                                     
+	    		<ul class="fir_co04">
+	    			<div class="class_ser">
+            	<ul>
+                <li style="border: 1px solid #e70908;"><a style="color: #e70908;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E4%B9%9D%E7%96%91%E5%B1%B1">华美礼盒</a></li>
+                <li style="border: 1px solid #e70908;"><a style="color: #e70908;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E8%85%8A%E5%85%AB%E8%B1%86">精品礼盒</a></li>
+                <li style="border: 1px solid #e70908;"><a style="color: #e70908;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E9%85%B1%E8%BE%A3%E6%A4%92">中秋礼盒</a></li>
+                <li style="border: 1px solid #e70908;"><a style="color: #e70908;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E9%98%BF%E5%A9%86%E5%B0%8F%E8%8F%9C">月饼礼盒</a></li>
+                <li style="border: 1px solid #e70908;"><a style="color: #e70908;" href="http://www.so50.com/products/ProductList.aspx?SearchKey=%E6%AF%9B%E9%98%BF%E5%A9%86">蓝莓酒</a></li>
+                <li style="border: 1px solid #e70908;"><a style="color: #e70908;" href="http://www.so50.com/products/ProductList.aspx?typid=193">沃琳</a></li>
+                </ul>
+            </div>
+	    		</ul>
+	    	</div>
+	    	<!-- 右边 -->
+	  <!-- 礼盒右边的template(模板) -->
+	    <script type="text/html" id="fir_lR_temp">
+	    <%
+          for(var i=0;i<products.length;i++){
+               var product = products[i];
+         %>
+	    	<div class="fir_lRbox">
+	    	<a  href="/products/ProductDec/7573.html" title="<%= product.description%>" target="_blank">
+	    				<img src="<%= product.bigimg%>" alt="<%= product.description%>">
+	    				<p><font><%= product.description%></font>
+	    				   <i><%= product.moneynew%>&nbsp;<span><%= product.moneyold%></span></i>
+	    				</p>
+	    			</a>
+	  <i class="fir_lsadd docs"><img src="<%= product.carimg%>">加入购物车</i>
+	      </div>
+          <% } %>
+	    </script>
+	    <!-- 添加的主体 -->
+	    	  <div class="fir_lR">
+	    	  	
+	    	  </div>
+	   <div class="clear"></div>
+       </div>
+     
 	<div class="footer"></div>
 </body>
 </html>

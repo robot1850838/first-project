@@ -2,7 +2,6 @@ require(["config"],function(){
 	require(["jquery","template","load"],function($,template){
 			// fbL02模板加载
          $.getJSON("/mock/fbL02_li.json",function(data){         	
-         	console.log(data);
 			var html = template("fbL02_li_temp",{products:data})
 			  $(".fbL02_ul").html(html);
 			  console.log($(".fbL02_ul")[0]);
@@ -144,6 +143,12 @@ require(["config"],function(){
 				currentIndex = nextIndex;
 				nextIndex++;
 			}
+
+		 //土货模板加载
+          $.getJSON("/mock/localproducts.json",function(data){         	
+			var html = template("fir_lR_temp",{products:data})
+			  $(".fir_lR").html(html);
+		});
 
 		});
 	});
