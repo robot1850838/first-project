@@ -1,27 +1,4 @@
-/*通配符*/
-*{
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-}
-body{
-	font-size: 12px;
-}
-img{
-	border: 0;
-}
-.clear{
-	clear: ;
-}
-ul li{
-	list-style: none;
-}
-i{
-	font-style: normal;
-}
-.clear {
-    clear: both;
-}
+
 .my_nav {
     width: 100%;
     border-bottom: 1px solid #cd660b;
@@ -501,4 +478,184 @@ i{
     display: block;
     font-size: 14px;
     text-align: center;
+}
+.fir_btm {
+    width: 1200px;
+    height: auto;
+    margin: 30px auto 40px;
+}
+.fir_btm01 {
+    width: 350px;
+    height: 204px;
+    border-bottom: 1px solid #eeeeee;
+    float: left;
+}
+.fir_btmtop {
+    width: 100%;
+    height: 39px;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 39px;
+    text-indent: 5px;
+    font-size: 16px;
+    position: relative;
+}
+.fir_btmtop a {
+    position: absolute;
+    right: 0;
+    color: #666;
+    font-size: 12px;
+}
+.fir_01btm {
+    width: 100%;
+    height: 125px;
+    margin: 20px 0;
+}
+.fir_01btm>ul {
+    width: 160px;
+    height: 130px;
+    overflow: hidden;
+    float: right;
+    margin-top: -5px;
+}
+.fir_01btm>ul li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    font-size: 12px;
+}
+.fir_01btm>ul li a {
+    color: #555;
+}
+.fir_btm02 {
+    width: 390px;
+    height: 204px;
+    border-bottom: 1px solid #eeeeee;
+    float: left;
+    margin: 0 60px;
+}
+.fir_btmtop {
+    width: 100%;
+    height: 39px;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 39px;
+    text-indent: 5px;
+    font-size: 16px;
+    position: relative;
+}
+.fir_btmtop a {
+    position: absolute;
+    right: 0;
+    color: #666;
+    font-size: 12px;
+}
+.fir_02btm {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+.fir_02btm a {
+    width: 100%;
+    height: 55px;
+    display: block;
+    margin: 20px 0 0;
+}
+.fir_02btm a>img {
+    width: 55px;
+    height: 55px;
+    float: left;
+}
+.fir_02btm a .fir_02det {
+    width: 310px;
+    height: 55px;
+    overflow: hidden;
+    float: right;
+}
+.fir_02btm a .fir_02det font, .fir_02btm a .fir_02det p {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    color: #ff6900;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fir_02btm a {
+    width: 100%;
+    height: 55px;
+    display: block;
+    margin: 20px 0 0;
+}
+.fir_02btm a>img {
+    width: 55px;
+    height: 55px;
+    float: left;
+}
+.fir_02btm a .fir_02det {
+    width: 310px;
+    height: 55px;
+    overflow: hidden;
+    float: right;
+}
+.fir_btm03 {
+    width: 340px;
+    height: 204px;
+    border-bottom: 1px solid #eeeeee;
+    float: right;
+}
+.fir_btmtop {
+    width: 100%;
+    height: 39px;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 39px;
+    text-indent: 5px;
+    font-size: 16px;
+    position: relative;
+}
+.fir_btmtop span {
+    position: absolute;
+    right: 0;
+    color: #666;
+    font-size: 12px;
+}
+.fir_btmtop span img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 11px;
+    left: -15px;
+}
+.fir_03ul {
+    width: 100%;
+    height: 80px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.fir_03ul li {
+    float: left;
+    margin: 0 2px;
+    width: 80px;
+    height: 80px;
+}
+.fir_03ul li img {
+    width: 80px;
+    height: 80px;
+}
+.fir_03my {
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+}
+.fir_03my a {
+    display: inline-block;
+    float: right;
+    width: 120px;
+    height: 30px;
+    background: #cd660b;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
 }

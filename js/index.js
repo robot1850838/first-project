@@ -144,11 +144,25 @@ require(["config"],function(){
 				nextIndex++;
 			}
 
-		 //土货模板加载
-          $.getJSON("/mock/localproducts.json",function(data){         	
-			var html = template("fir_lR_temp",{products:data})
-			  $(".fir_lR").html(html);
-		});
-
+				 //土货模板加载
+		          $.getJSON("/mock/localproducts.json",function(data){         	
+					var html = template("fir_lR_temp",{products:data})
+					  $(".localproducts_fir_lR").html(html);
+				});
+		          //水果模板加载
+		          $.getJSON("/mock/fruits.json",function(data){         	
+					var html = template("fruits-fir_lR_temp",{products:data})
+					  $(".fruits_fir_lR").html(html);
+		        });
+		          //零食模板加载
+		          $.getJSON("/mock/snacks.json",function(data){         	
+					var html = template("snacks-fir_lR_temp",{products:data})
+					  $(".snacks_fir_lR").html(html);
+				});
+		          //礼盒模板加载
+		          $.getJSON("/mock/giftbox.json",function(data){         	
+					var html = template("giftbox-fir_lR_temp",{products:data})
+					  $(".giftbox_fir_lR").html(html);
+				});
 		});
 	});
