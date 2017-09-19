@@ -1,5 +1,5 @@
 require(["config"],function(){
-    require(["jquery","load","loadnav"],function($){
+    require(["jquery","template","load","loadnav","loadNume"],function($,template){
           var imgboxs = $("#list-h li"),
               len = imgboxs.length,
               imgWidth = imgboxs.outerWidth(), // 轮播图片盒子的宽度
@@ -49,5 +49,23 @@ require(["config"],function(){
 				currentIndex = nextIndex;
 				nextIndex++;
           }
-    });
+          // 载入list左边第一个模板
+
+          $.getJSON("/mock/list1.json",function(data){
+          	console.log(data);
+          	  var html = template("ct_pro_temp",{products:data})
+          	  $(".ct_pro_ul").html(html);
+          });
+          // 载入list左边第二个模板
+          $.getJSON("mock/list2.json",function(data){
+          	console.log(data);
+          	    var html = template("bp_Rbtm_temp",{products:data})
+          	    $(".bp_Rbtm_ul").html(html);
+          });
+          //footer上面第一个猜你喜欢的模板
+         $.getJSON("mock/listLast.json",function(data){
+          	console.log(data);
+          	    var html = template("fir_lR_temp",{products:data})
+          	    $(".fir_lR").html(html);
+          });    });
 });

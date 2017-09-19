@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/nav.css">
 	<link rel="stylesheet" type="text/css" href="../css/list.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/rightNume.css">
 	<script src="../lib/requirejs/require.js" data-main="../js/list"></script>
 	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
 	<script src="../lib/jquery_plugins/jquery.elevateZoom-2.2.3.min.js"></script>
@@ -32,6 +33,7 @@
 			$("#zoom_01").elevateZoom();
 		</script>
 	</div> -->
+    <!-- 商品展示 -->
 	 <div class="det_T">
     	<div class="det_big">
     		<div id="preview">
@@ -48,7 +50,8 @@
 		          </div>
 		          <div class="control" id="spec-right"><img src="img/list/right.png" /></div>
 		        </div>
-		    </div></div>
+		    </div>
+        </div>
 		<div class="det_order">
     		<h1>龙山喜乐300g百合面（宽细随机）*3包  全国包邮（除新疆、西藏、内蒙、甘肃、东三省及海南） 隔日发货</h1>
     		<em> </em>
@@ -73,7 +76,7 @@
     				</div>
     			</div>
     			<div class="clear"></div>
-    		</div>
+            </div>
     	    <ul class="det_or02">
     	    	<li><span>运费</span><i><font style="color:#cd660b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全国配送</font></i></li>
     	    	<li><span>净含量</span><i>约900.00克</i></li>
@@ -99,9 +102,219 @@
     	       	  收藏商品（193人）
     	       </div>
     	    </div>
-    	</div>
-
+         <div class="det_oth">
+            <div class="det_others">
+                <font>长沙总仓</font>
+                <i><a href="http://wx.so50.com/16/" target="_blank" title="返回首页">返回首页</a><span></span><a href="/" target="_blank" title="搜农坊首页">搜农坊首页</a><div class="clear"></div></i>
+                <p>门店地址：麓谷企业广场F4栋3楼</p>
+            </div>
+            <ul>
+                <li><img src="img/list/r1.png"><p>产地直供</p></li>
+                <li><img src="img/list/r2.png"><p>无忧售后</p></li>
+                <li><img src="img/list/r3.png"><p>特色土货</p></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
      </div>
+
+
+    <!-- 商品列表 -->
+    <div class="det_LR">
+        <div class="det_L">
+            <!-- 店内搜索 -->
+            <div class="bp_Rtop det_Rtop">
+                <em>店内搜索</em>
+                <p>关键词<input type="text"  id="keywordcp" name="keywordcp"></p>
+                <p>价格<i><input type="num" id="minpricp" name="minpricp">到<input type="num" id="maxpricp" name="maxpricp"></i></p>
+               <p> <input type="button" value="搜索" style="cursor:pointer;" onClick="searchListcp();"></p>
+            </div>
+            <!-- 所有产品 -->
+            <div class="ct_All">
+                <em>所有产品分类</em>
+                 
+                <div class="my_plist">
+                        <div class="my_pcontent">
+                            <p>水果</p>
+                              <a href='javascript:void(0);' onclick='getsearchingtypid(277,'');' title='进口水果'>进口水果</a><a href='javascript:void(0);' onclick='getsearchingtypid(278,'');' title='源产水果'>源产水果</a><a href='javascript:void(0);' onclick='getsearchingtypid(279,'');' title='水果礼盒'>水果礼盒</a>
+                        
+                        </div>
+                    </div>
+              
+                <div class="my_plist">
+                        <div class="my_pcontent">
+                            <p>土货</p>
+                              <a href='javascript:void(0);' onclick='getsearchingtypid(283,'');' title='源产肉禽'>源产肉禽</a><a href='javascript:void(0);' onclick='getsearchingtypid(282,'');' title='农家食材'>农家食材</a><a href='javascript:void(0);' onclick='getsearchingtypid(284,'');' title='源创零食'>源创零食</a>
+                        
+                        </div>
+                    </div>
+              
+                <div class="my_plist">
+                        <div class="my_pcontent">
+                            <p>零食</p>
+                              <a href='javascript:void(0);' onclick='getsearchingtypid(285,'');' title='坚果蜜饯'>坚果蜜饯</a><a href='javascript:void(0);' onclick='getsearchingtypid(174,'');' title='饼干糕点'>饼干糕点</a><a href='javascript:void(0);' onclick='getsearchingtypid(175,'');' title='零嘴小食'>零嘴小食</a><a href='javascript:void(0);' onclick='getsearchingtypid(200,'');' title='冲调饮品'>冲调饮品</a>
+                        
+                        </div>
+                    </div>
+              
+                <div class="my_plist">
+                        <div class="my_pcontent">
+                            <p>礼盒</p>
+                              <a href='javascript:void(0);' onclick='getsearchingtypid(261,'');' title='特色礼盒'>特色礼盒</a><a href='javascript:void(0);' onclick='getsearchingtypid(316,'');' title='土货礼盒'>土货礼盒</a><a href='javascript:void(0);' onclick='getsearchingtypid(317,'');' title='节庆礼盒'>节庆礼盒</a>
+                        
+                        </div>
+                    </div>
+                </div>
+                  
+            <!-- 进口水果 -->
+            <!-- 模板 -->
+            <script type="text/html" id="ct_pro_temp">
+                   <%
+                      for(var i=0;i<products.length;i++){
+                          var product = products[i];
+                   %>
+
+                        <li>
+                            <a href="/products/ProductDec/7590.html" target="_blank" title="<%= product.description %>"><img src="<%= product.img %>" alt="<%= product.description %>" /></a>
+                            <p><a href="/products/ProductDec/7590.html" target="_blank" title="<%= product.description %>"><%= product.description %></a><span>已售<i style="color:#f00f00;font-size:8px;"><%= product.amount %></i>件</span></p>
+                            <em><%= product.price %></em><a onClick="javascript:SubmitShopping_Click(7590,this,0)" target="_blank"><input type="button" value="加入购物车" class="my_cadd"></a>
+                        </li>
+                 <% } %>
+
+            </script>
+            <div class="my_crproduct ct_pro">   
+                    <em>进口水果</em>
+                    <ul style="display:block;" class="ct_pro_ul">
+                      
+                    </ul>
+            </div>
+            <!-- 最近浏览模板 -->
+            <script type="text/html" id="bp_Rbtm_temp">
+                  <%
+                       for(var i=0;i<products.length;i++){
+                         var product = products[i];
+                   %> 
+                      <li>
+                          <a href="#" target="_blank" title="<%= product.description %>">
+                            <img src="<%= product.img %>" alt="<%=
+                            product.description %>" data-bd-imgshare-binded="1">
+                            <p>
+                                <font><%= product.description %></font>
+                                <span><%= product.price %></span>
+                            </p>
+                            <div class="clear"></div>
+                          </a>
+                      </li>   
+                  <% } %>
+            </script>
+             <div class="bp_Rbtm">
+                    <em>最近浏览过</em>
+                    <ul class="bp_Rbtm_ul">
+                        
+                    </ul>
+                </div>
+                  </div>       
+      <!-- 商品详情右边 -->
+    <div class="det_R">
+            <div class="my_crproduct det_crp" style="margin-top:0;">
+                <p><a  class="det_color det_clink " title="猜你喜欢">猜你喜欢</a>
+                <a  class="det_color" title="累计评价">累计评价（0）</a>
+                <a  class="det_color" title="搜农特色">搜农特色</a>
+                </p>
+            </div>
+            <div class="det_Rcont">
+                    <div class="det_R01">
+                        <ul class="det_shop">
+                            <li>商品名称:龙山喜乐300g百合面（宽细随机）*3包  全国包邮（除新疆、西藏、内蒙、甘肃、东三省及海南） 隔日发货</li>
+                            <li>商品编号：ZTH161</li>
+                            <li>商品产地:</li>
+                            <li>上架时间:2017/8/11 17:39:28</li>
+                            <li>商品规格：300克*3袋</li>
+                            <li>配送区域：全国包邮（除新疆、西藏、内蒙、甘肃、东三省及海南）</li>
+                            <div class="clear"></div>
+                        </ul>
+                        <p class="det_p">
+                             <p><img src="img/list/lastm1.jpg" style="float:none;" title="百合面_01.jpg"/>
+                             </p>
+                             <p><img src="img/list/lastm2.jpg" style="float:none;" title="百合面_02.jpg"/>
+                             </p>
+                             <p><img src="img/list/lastm3.jpg" style="float:none;" title="百合面_03.jpg"/>
+                             </p>
+                             <p><img src="img/list/lastm4.jpg" style="float:none;" title="百合面_04.jpg"/>
+                             </p>
+                             <p><img src="img/list/lastm5.jpg" style="float:none;" title="百合面_05.jpg"/>
+                             </p>
+                             <p><img src="img/list/lastm6.jpg" style="float:none;" title="百合面_06.jpg"/>
+                             </p>
+                             <p><img src="img/list/lastm7.jpg" title="微信图片_20170905145655.jpg"/></p>
+                             <p><img src="img/list/lastm8.jpg" style="float:none;" title="百合面_08.jpg"/></p>
+                             <p><br/></p>
+                        </p>
+                    </div>
+                    <div class="det_R01">
+                        <div class="det_pj">
+                            <div class="det_pj01">
+                                <em>0%<img src="img/list/sj.png"></em>
+                                <font>好评度</font>
+                            </div>
+                            <ul class="det_pj02">
+                                <li><i>好评度<span>（0条）</span></i><b><em></em></b><font>0%</font></li>
+                                <li><i>中评<span>（0条）</span></i><b><em></em></b><font>0%</font></li>
+                                <li><i>差评<span>（0条）</span></i><b><em></em></b><font>0%</font></li>
+                            </ul>
+                            <div class="det_pj03">
+                                <p>购买过此商品，评论还可换积分</p>
+                                <a href="#" target="_blank">发表评价</a>    
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="det_pjCont">
+                            <div class="det_pjTit">
+                                <p>好评（0条）<img src="img/list/sj02.png"></p>
+                            </div>
+                            <div class="det_pos" id="pic_box1"></div>
+                        </div>
+                        <div class="det_page">
+                            <div class="det_pa">
+                                <div id="PageInfo1" class="zq_lh_page"></div>                           
+                                <div class="clear"></div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="det_R01"></div>
+                    <div class="clear"></div> 
+             </div>          
+         </div>
+    <div class="clear"></div>
+    <!-- 商品下面猜你喜欢 -->
+    <script type="text/html" id="fir_lR_temp">
+        <%
+           for(var i=0;i<products.length;i++){
+           var product = products[i];
+        %>
+         <div class="fir_lRbox">
+             <a href="/products/ProductDec/7663.html" target="_balnk" title="<%= product.description %>">
+                            <img src="<%= product.bigimg %>"  alt="<%= product.description %>">
+                            <p><font><%= product.description %></font>
+                               <i><%= product.moneynew %>&nbsp;<span><%= product.moneyold %></span></i>
+                            </p>
+                        </a>
+                        <i class="fir_lsadd" onClick="javascript:SubmitShopping_Click(7663,this,0)"><img src="<%= product.carimg %>">加入购物车</i>
+                    </div>
+
+      <% } %>
+    </script>
+    <div class="det_Btm">
+        <div class="my_crproduct" style="overflow:hidden">
+                <p><a href="#" target="_blank" class="my_clink det_clink" title="猜你喜欢">猜你喜欢</a></p>
+                <div class="fir_lR det_fir">
+                </div>
+        </div>
+    </div>
+      
+</div>
 	<div class="footer"></div>
+    <div class="rNume">
+        
+    </div>
 </body>
 </html>

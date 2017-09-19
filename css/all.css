@@ -16,9 +16,12 @@ img{
 ul li{
 	list-style: none;
 }
-i{
+i，em{
 	font-style: normal;
 }
 .clear {
     clear: both;
+}
+a{
+	color: #000;
 }

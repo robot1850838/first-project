@@ -153,6 +153,7 @@
     bottom: -30px;
     left: 0;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 .fir_lsadd img {
     width: 23px;

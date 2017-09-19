@@ -1,5 +1,5 @@
 require(["config"],function(){
-	require(["jquery","template","load"],function($,template){
+	require(["jquery","template","fly","load","loadNume"],function($,template,fly){
 			// fbL02模板加载
          $.getJSON("/mock/fbL02_li.json",function(data){         	
 			var html = template("fbL02_li_temp",{products:data})
@@ -37,9 +37,7 @@ require(["config"],function(){
 				
 			  $(".fbL02_index li").eq(circleIndex).addClass("current")
 									   .siblings().removeClass("current");
-						console.log("11");
 			  $(".fbL02_box").stop().animate({top:_top},function(){
-		                      console.log(fbL_nextIndex);
 		                      if(fbL_nextIndex >= 2){
 		                         fbL_currentIndex = -1;
 		             	   	     fbL_nextIndex = 0;
@@ -48,7 +46,6 @@ require(["config"],function(){
 		             	   }); 
 						   fbL_currentIndex = fbL_nextIndex;
 						   fbL_nextIndex++;
-						   console.log("13");
              }
          //banner左右轮播
         		var imgBoxes = $("#imgs li"), // 待轮播的图片盒子
@@ -164,5 +161,23 @@ require(["config"],function(){
 					var html = template("giftbox-fir_lR_temp",{products:data})
 					  $(".giftbox_fir_lR").html(html);
 				});
+
+		          //点击购物车fly的动作
+		          $(".flybtn").on("click", ".fir_lsadd",function(e){
+						var offset = $(".cart_info").offset();
+						var flyer = $("<img src='img/fly.jpg' style='width:40px;height:40px;'>");
+						flyer.fly({
+							start:{
+								left : e.clientX,
+								top : e.clientY
+							},
+							end:{
+								left: offset.left - $(window).scrollLeft(),
+								top: offset.top - $(window).scrollTop(),
+								width : 0,
+								height : 0
+							}
+						});				     
+					});
 		});
 	});

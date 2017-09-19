@@ -8,7 +8,8 @@ require.config({
 		"zoom":"lib/jquery_plugins/jquery.elevateZoom-2",
 		"template" : "lib/arttemplate/template-native",
 		"load":"js/loadheaderfooter",
-		"loadnav":"js/loadnav"
+		"loadnav":"js/loadnav",
+		"loadNume":"js/loadNume"
 	},
 	shim :{
 		"fly":{
@@ -18,6 +19,9 @@ require.config({
 			deps :["jquery"]
 		},
 		"loadnav":{
+			deps:["jquery"]
+		},
+		"loadNume":{
 			deps:["jquery"]
 		}
 	}

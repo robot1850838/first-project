@@ -1,0 +1,19 @@
+.rNume{
+	position: fixed;
+	right: 0px;
+	bottom: 2px;
+}
+.bigbox .box ul li {
+    width: 58px;
+    float: none;
+    padding-bottom: 3px;
+    cursor: pointer;
+    height: 56px;
+    display: block;
+}
+.bigbox .box ul li a{
+	background-position: 0px -176px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}

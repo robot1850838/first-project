@@ -479,6 +479,10 @@
     font-size: 14px;
     text-align: center;
 }
+.localproducts_fir_lR, .snacks_fir_lR,.fruits_fir_lR,.giftbox_fir_lR{
+    float: left;
+    width: 900px;
+}
 .fir_btm {
     width: 1200px;
     height: auto;
