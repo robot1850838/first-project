@@ -10,35 +10,34 @@
 	<script src="../lib/requirejs/require.js" data-main="../js/regist"></script>
 </head>
 <body>
+
 	<div class="header" style="width: 100%;height: auto;"></div>
+ <form action="#" method="post">
 	   <div class="sregister">
     	<ul class="sreg_left">
     		<li><span>用户名</span>
-            <input name="try_user_regname" type="text" id="try_user_regname" placeholder="您的常用手机号" onblur="userNamecheck(this.value);" />
+            <input name="try_user_regname" type="text" id="try_user_regname" placeholder="您的常用手机号" " />
             <p id="_user_regname" style="color:Red;"></p>
          </li>
-    		<li><span>设置密码</span> <input name="try_user_pwd" type="password" id="try_user_pwd" onblur="userPwdcheck(this.value);" placeholder="建议使用两种字符组合" />
+    		<li><span>设置密码</span> <input name="try_user_pwd" type="password" id="try_user_pwd" " placeholder="建议使用两种字符组合" />
              <p id="_user_pwd" style="color:Red;"></p>
            </li>
-    		<li><span>确认密码</span><input name="try_user_pwd1" type="password" id="try_user_pwd1" placeholder="请再次输入密码" onblur="userPwdcheck1(this.value);" /> 
+    		<li><span>确认密码</span><input name="try_user_pwd1" type="password" id="try_user_pwd1" placeholder="请再次输入密码"  /> 
                 <p id="_user_pwd1" style="color:Red;"></p>
            </li>
-    		<li><span>验证码</span> <input name="lSecurityCode" type="text" id="lSecurityCode" class="sreg_code" onblur="logonuser_yanzmcod(this.value);" />
+    		<li><span>验证码</span> <input name="lSecurityCode" type="text" id="lSecurityCode" class="sreg_code"/><img src="" id="code_img"><span id="code_info">
                 <p id="_lSecurityCode" style="color:Red;"></p>
             </li>
     		<li class="sreg_border sred_height"><input name="remchk" class="sreg_http" id="remchk" tabindex="1" type="checkbox" value="1" checked> 
          我已阅读并同意<i>《搜农用户注册协议》</i></li>
-    		<li class="sreg_border"><input type="button" name="submit" value="立即注册" class="sreg_input" onClick="btnOkClient();"></li>
-            <div style=" display:none;">
-             <input type="submit" name="btn_pl" value="立即注册" id="btn_pl" class="registerNow" />
-             </div>
-    	
+    		<li class="sreg_border"><button name="submit" class="sreg_input" id="registbtn">立即注册</botton></li>  	
     	</ul>
     	<div class="sreg_right">
     		<img src="../img/regist/code_wei.png" alt="搜农坊扫码"/>
     	</div>
     </div>
-
+        </form>
 	<div class="footer"></div>
+
 </body>
 </html>

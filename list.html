@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表</title>
+	<link rel="stylesheet" type="text/css" href="../css/all.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<script src="../lib/requirejs/require.js" data-main="../js/list"></script>
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jquery_plugins/jquery.elevateZoom-2.2.3.min.js"></script>
+</head>
+<body>
+	<div class="header" style="width: 100%;height: auto;"></div>
+	<div class="my_nav clear"></div>
+	<!-- <script type="text/html" id="list_temp">
+		<%
+		   for(var i=0;i<products.length;i++){
+            var product = products[i]; 
+       %>
+          <div class="det_T">
+          	  
+          </div>
+
+		  <$ } %>
+	</script> -->
+	<!-- <div class="det_T">
+		<img id="zoom_01" src="img/list/small/image1.png" data-zoom-image="img/list/large/image1.jpg"/>
+		<script>
+			$("#zoom_01").elevateZoom();
+		</script>
+	</div> -->
+	 <div class="det_T">
+    	<div class="det_big">
+    		<div id="preview">
+		        <div class="jqzoom" id="spec-n1" ><img id="zoom_01" src="img/list/small/image1.png" data-zoom-image="img/list/large/image1.jpg"/></div>
+		        <script> $("#zoom_01").elevateZoom();</script>
+		        <div id="spec-n5">
+		          <div class="control" id="spec-left"><img src="img/list/left.png" /></div>
+		          <div id="spec-list">
+		          <div style="position:relative;overflow:hidden;z-index:1;width:296px;height:66px;">
+		            <ul class="list-h" id="list-h" style="width: 296px; overflow: hidden; position: absolute; left: 0px; top: 0px; margin-top: 0px; margin-left: 0px;">
+                      <li><img src='img/list/small/image1.png' alt='龙山喜乐300g百合面（宽细随机）*3包  全国包邮（除新疆、西藏、内蒙、甘肃、东三省及海南） 隔日发货'></li><li><img src='img/list/small/image2.png' alt='龙山喜乐300g百合面（宽细随机）*3包  全国包邮（除新疆、西藏、内蒙、甘肃、东三省及海南） 隔日发货'></li><li><img src='img/list/small/image3.png' alt='龙山喜乐300g百合面（宽细随机）*3包  全国包邮（除新疆、西藏、内蒙、甘肃、东三省及海南） 隔日发货'></li><li><img src='img/list/small/image4.png' alt='龙山喜乐300g百合面（宽细随机）*3包  全国包邮（除新疆、西藏、内蒙、甘肃、东三省及海南） 隔日发货'></li>
+                    </ul>
+                    </div>
+		          </div>
+		          <div class="control" id="spec-right"><img src="img/list/right.png" /></div>
+		        </div>
+		    </div></div>
+		<div class="det_order">
+    		<h1>龙山喜乐300g百合面（宽细随机）*3包  全国包邮（除新疆、西藏、内蒙、甘肃、东三省及海南） 隔日发货</h1>
+    		<em> </em>
+    		<div class="det_or01">
+    			<ul class="det_or01L">
+    				<li><span>价格</span><i>￥48.00</i></li>
+    				<li><span>直供价</span><i style="color:#ff6900;font-weight:bold;font-size:24px;">￥36.00<font>节省12.00元</font></i></li>
+    				
+    			</ul>
+    			<div class="det_or01R">
+    				<p><a href="#" target="_blank">成功交易<span>13</span></a></p>
+    				<p>累计评价<span>0</span></p>
+    				<div class="clear"></div>
+    				<div class="det_or01buy">
+    					去手机购买
+    					<img src="img/list/m1.png">
+    					<img src="img/list/m4.png">
+                        <div class="det_sbuy">
+                               <img src="img/list/m2.png">
+                               <p>扫二维码手机购买</p>
+                        </div>
+    				</div>
+    			</div>
+    			<div class="clear"></div>
+    		</div>
+    	    <ul class="det_or02">
+    	    	<li><span>运费</span><i><font style="color:#cd660b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全国配送</font></i></li>
+    	    	<li><span>净含量</span><i>约900.00克</i></li>
+    	    	<li><span>单价</span><i>0.04元/克</i></li>
+    	    	<li><span>购买数量</span><i><div class="det_or02num"><b onClick="javascript:SubtotalMinus_Click()">-</b><input type="num" placeholder="1" id="buysum" title="请输入购买量" value="1" onBlur="javascript:isnumber()"><b onClick="javascript:SubtotalAdd_Click()">+</b></div>&nbsp;&nbsp;件&nbsp;&nbsp;库存997件</i></li><div class="clear"></div>
+    	    	<li><span>温馨提示</span><i>0</i></li>
+    	    </ul>
+    	    <div class="det_or03">
+            
+            	<a onClick="javascript:SubmitShopping_Click(7492,this,1)" target="_blank" title="立即购买">立即购买</a>
+    	    	<a onClick="javascript:SubmitShopping_Click(7492,this,0)" target="_blank" title="加入购物车" class="det_or03a"><img src="img/list/m3.png">加入购物车</a>
+    	    
+    	    	<div class="clear"></div>
+    	    </div>
+    	  <!--   <div class="det_or04">
+    	       <div class=" det_or04L">
+    	          <div class="bdsharebuttonbox"><a href="#" target="_blank" class="bds_more" data-cmd="more">分享</a><a href="#" target="_blank" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" target="_blank" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" target="_blank" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" target="_blank" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" target="_blank" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                  <script>                      window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "20" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "20" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+    	       </div> -->
+    	       <div class="det_or04R" id="det_or04R">
+    	       	  <img src="img/list/m5.png">
+    	       	  <img src="img/list/m6.png" style="display:none;">
+    	       	  收藏商品（193人）
+    	       </div>
+    	    </div>
+    	</div>
+
+     </div>
+	<div class="footer"></div>
+</body>
+</html>

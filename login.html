@@ -25,16 +25,35 @@
             <input name="openId" type="hidden" id="openId" />
             <input name="accessToken" type="hidden" id="accessToken" value="0" />
     	    <ul class="slogin_li">
-	    		<li><span>搜农坊会员登录</span><a href="regist.aspx" target="_blank"><img src="../img/login/logo_select.png" />&nbsp;立即注册</a></li>
-	    	    <li class="slogin_notice clear"><img src="../img/login/logo_notice.png" />公共场所不建议自动登录，以防账号丢失</li>
-	    	    <li class="slogin_border"><i class="slogin_icon"><img src="../img/login/logo_person.png" alt="登录名"/></i><input name="user_name" type="text" id="user_name" placeholder="邮箱/手机/用户名" /></li>
-	    	    <li class="slogin_border"><i class="slogin_icon"><img src="../img/login/logo_password.png" alt="密码"/></i><input name="pwd1" type="password" id="pwd1" placeholder="密码" /></li>
+	    		<li>
+	    		<span>搜农坊会员登录</span>
+	    		<a href="regist.aspx" target="_blank">
+	    		<img src="../img/login/logo_select.png" />&nbsp;立即注册
+	    		</a>
+	    		</li>
+	    	    <li class="slogin_notice clear">
+	    	    <img src="../img/login/logo_notice.png" />公共场所不建议自动登录，以防账号丢失
+	    	    </li>
+	    	    <li class="slogin_border">
+	    	    <i class="slogin_icon"><img src="../img/login/logo_person.png" alt="登录名"/>
+	    	    </i>
+	    	    <input name="user_name" type="text" id="user_name" placeholder="邮箱/手机/用户名" />
+	    	    </li>
+	    	    <li class="slogin_border">
+	    	    <i class="slogin_icon">
+	    	    <img src="../img/login/logo_password.png" alt="密码"/>
+	    	    </i>
+	    	    <input name="pwd1" type="password" id="pwd1" placeholder="密码" /></li>
 	    	    <li class="slogin_auto clear"> <table id="cb_newmodel">
-	<tr>
-		<td><input id="cb_newmodel_0" type="checkbox" name="cb_newmodel$0" value="1" /><label for="cb_newmodel_0">自动登录</label></td>
-	</tr>
-</table><a href="ForgotPass.aspx" target="_blank">忘记密码?</a></li>
-	    	    <li><input type="button" value="登录" class="slogin_submit"  onclick="usercheck();"/></li>
+				<tr>
+					<td>
+					<input id="cb_newmodel_0" type="checkbox" name="cb_newmodel$0" value="1" />
+					<label for="cb_newmodel_0">自动登录</label>
+					</td>
+				</tr>
+				</table><a href="ForgotPass.aspx" target="_blank">忘记密码?</a>
+				</li>
+	    	    <li><input type="button" value="登录" class="slogin_submit"  id="loginbtn" style="cursor: pointer;" /></li>
     	    </ul>
     	    <div class="slogin_web">
     	    	<p>合作网站账户登录:</p>

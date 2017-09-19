@@ -1,0 +1,93 @@
+input{
+	outline: none;
+}
+.sregister {
+    width: 815px;
+    height: 450px;
+    margin: 60px auto;
+}
+.sreg_left {
+    width: 505px;
+    height: 450px;
+    border-right: 1px solid #e6e6e6;
+    float: left;
+}
+.sreg_left li {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 35px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+}
+
+.sreg_left li span {
+    display: block;
+    width: 115px;
+    height: 50px;
+    line-height: 50px;
+    color: #66666a;
+    text-align: center;
+    letter-spacing: 4px;
+    float: left;
+}
+.sreg_left li input, .sreg_input {
+    width: 273px;
+    height: 48px;
+    line-height: 48px;
+    text-indent: 20px;
+    border: 1px solid #fff;
+    color: #333;
+}
+
+.sreg_left li p {
+    position: absolute;
+    left: 30px;
+    top: 60px;
+}
+.sreg_right {
+    background: url(../img/regist/register_tel.png) no-repeat;
+    float: right;
+    width: 220px;
+    height: 320px;
+}
+.sreg_right img {
+    margin: 180px 58px 0;
+}
+.sreg_left li.sred_height {
+    color: #555;
+    height: 18px;
+    text-indent: 10px;
+}
+.sreg_left li.sreg_border {
+    border: none;
+}
+.sreg_left li .sreg_code {
+    width: 170px;
+}
+.sreg_left li .sreg_http {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #a7a7a7;
+}
+.sreg_left li.sred_height i {
+    color: #d26201;
+}
+.sreg_left li .sreg_input {
+    width: 400px;
+    height: 50px;
+    background: #ff6900;
+    border: 1px solid #ff6900;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.sreg_left li img {
+    display: block;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
